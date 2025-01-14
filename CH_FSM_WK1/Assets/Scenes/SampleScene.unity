@@ -363,6 +363,8 @@ GameObject:
   - component: {fileID: 882296277}
   - component: {fileID: 882296276}
   - component: {fileID: 882296275}
+  - component: {fileID: 882296281}
+  - component: {fileID: 882296280}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -485,6 +487,59 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &882296280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 882296274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b98a6db0b653f764eac834f85857a9dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _parentBlackboard: {fileID: 0}
+  _serializedBlackboard: '{"_variables":{"Furniture":{"_name":"Furniture","_id":"6190ab35-bdcc-43ea-84d6-c4ba5ea71a7e","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}}}'
+  _objectReferences: []
+  _serializedVariables:
+  - _json: '{"_name":"Furniture","_id":"6190ab35-bdcc-43ea-84d6-c4ba5ea71a7e","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}'
+    _references: []
+--- !u!114 &882296281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 882296274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a7dbb6bbdf4ffb46ab7dd87ba8191e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serializedExposedParameters: []
+  _boundGraphSerialization: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"executionMode":1,"actions":[]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_position":{"x":736.6673,"y":171.0594},"$type":"NodeCanvas.StateMachines.ActionState","$id":"0"},{"_actionList":{"executionMode":1,"actions":[{"parent":{"_name":""},"clonePosition":{"_value":{"x":2.5,"y":0.5}},"cloneRotation":{},"saveCloneAs":{"_name":"Furniture","_targetVariableID":"6190ab35-bdcc-43ea-84d6-c4ba5ea71a7e"},"overrideAgent":{"_type":"UnityEngine.Transform","_value":1},"$type":"NodeCanvas.Tasks.Actions.InstantiateGameObject"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Create
+    Furniture","_position":{"x":335.0,"y":346.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"1"},{"_actionList":{"executionMode":1,"actions":[{"audioClip":{},"$type":"NodeCanvas.Tasks.Actions.PlayAudioAtPosition"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Play
+    Sound","_position":{"x":810.0923,"y":530.8354},"$type":"NodeCanvas.StateMachines.ActionState","$id":"2"},{"_actionList":{"executionMode":1,"actions":[]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_position":{"x":1117.184,"y":368.8482},"$type":"NodeCanvas.StateMachines.ActionState","$id":"3"}],"connections":[{"_condition":{"$type":"NodeCanvas.Tasks.Conditions.CheckKeyboardInput"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"key":9,"$type":"NodeCanvas.Tasks.Conditions.CheckKeyboardInput"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"3"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
+  _boundGraphObjectReferences:
+  - {fileID: 0}
+  - {fileID: 8320277936682483416, guid: d77b07a450e6ccf47adae09d8cb4442c, type: 3}
+  _boundGraphSource:
+    _version: 3.31
+    _category: 
+    _comments: 
+    _translation: {x: -14, y: 124}
+    _zoomFactor: 0.56391776
+  _firstActivation: 0
+  _enableAction: 0
+  _disableAction: 0
+  _lockBoundGraphPrefabOverrides: 1
+  _preInitializeSubGraphs: 0
+  _updateMode: 0
+  _graph: {fileID: 0}
+  _blackboard: {fileID: 882296280}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
