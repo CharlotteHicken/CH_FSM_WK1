@@ -31,7 +31,7 @@ namespace NodeCanvas.Tasks.Conditions {
 		//Return whether the condition is success or failure.
 		protected override bool OnCheck() {
 			ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-			if (Input.GetKeyDown(KeyCode.Tab))
+			if (Input.GetKeyDown(KeyCode.LeftShift))
 			{
 				if (Physics.Raycast(ray, out hit))
 				{
