@@ -343,9 +343,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _parentBlackboard: {fileID: 0}
-  _serializedBlackboard: '{"_variables":{}}'
+  _serializedBlackboard: '{"_variables":{"speed":{"_value":3.0,"_name":"speed","_id":"102973b7-a8b5-4785-b3cb-802bfe2354c9","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"energy":{"_value":15.0,"_name":"energy","_id":"ee31331a-528f-4412-8a7c-07c9ecfa9df7","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"energyUse":{"_value":1.0,"_name":"energyUse","_id":"d21ab007-5763-47ab-ac8d-5679e8a2dd0b","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}}}'
   _objectReferences: []
-  _serializedVariables: []
+  _serializedVariables:
+  - _json: '{"_value":3.0,"_name":"speed","_id":"102973b7-a8b5-4785-b3cb-802bfe2354c9","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_value":15.0,"_name":"energy","_id":"ee31331a-528f-4412-8a7c-07c9ecfa9df7","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_value":1.0,"_name":"energyUse","_id":"d21ab007-5763-47ab-ac8d-5679e8a2dd0b","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
 --- !u!114 &341929445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -359,13 +371,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _serializedExposedParameters: []
-  _boundGraphSerialization: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[],"connections":[],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
-  _boundGraphObjectReferences: []
+  _boundGraphSerialization: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"executionMode":1,"actions":[{"target":1,"speed":3.0,"arrivalDistance":0.2,"$type":"NodeCanvas.Tasks.Actions.ApproachAT"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"A-Approach","_position":{"x":-262.8265,"y":345.2452},"$type":"NodeCanvas.StateMachines.ActionState","$id":"0"},{"_actionList":{"executionMode":1,"actions":[{"compactor":2,"crushDuration":4.0,"$type":"NodeCanvas.Tasks.Actions.CrushAT"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"A-Crush","_position":{"x":-14.82654,"y":545.2452},"$type":"NodeCanvas.StateMachines.ActionState","$id":"1"},{"_actionList":{"executionMode":1,"actions":[{"target":3,"speed":3.0,"arrivalDistance":0.2,"$type":"NodeCanvas.Tasks.Actions.ApproachAT"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"B-Approach","_position":{"x":226.1735,"y":362.2452},"$type":"NodeCanvas.StateMachines.ActionState","$id":"2"},{"_actionList":{"executionMode":1,"actions":[{"compactor":4,"crushDuration":4.0,"$type":"NodeCanvas.Tasks.Actions.CrushAT"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"B-Crush","_position":{"x":-45.82654,"y":146.2452},"$type":"NodeCanvas.StateMachines.ActionState","$id":"3"},{"_position":{"x":-493.8265,"y":242.2452},"$type":"NodeCanvas.StateMachines.AnyState","$id":"4"},{"_actionList":{"executionMode":1,"actions":[{"target":5,"arrivalDistance":0.3,"maxEnergy":15.0,"rechargeTime":3.0,"$type":"NodeCanvas.Tasks.Actions.RechargeAT"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_position":{"x":-439.8265,"y":551.2452},"$type":"NodeCanvas.StateMachines.ActionState","$id":"5"}],"connections":[{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"3"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"energy","_targetVariableID":"ee31331a-528f-4412-8a7c-07c9ecfa9df7"},"checkType":2,"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckFloat"},"_sourceNode":{"$ref":"4"},"_targetNode":{"$ref":"5"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"5"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
+  _boundGraphObjectReferences:
+  - {fileID: 0}
+  - {fileID: 1366323902}
+  - {fileID: 2072021876}
+  - {fileID: 821430103}
+  - {fileID: 1981231492}
+  - {fileID: 546998561}
   _boundGraphSource:
     _version: 3.31
     _category: 
     _comments: 
-    _translation: {x: 852, y: 195}
+    _translation: {x: 808.82654, y: 217.7548}
     _zoomFactor: 1
   _firstActivation: 0
   _enableAction: 0
