@@ -35,7 +35,10 @@ namespace NodeCanvas.Tasks.Conditions {
 			{
 				if (Physics.Raycast(ray, out hit))
 				{
-					hit.transform.SetParent(playerTransform, true);
+					if (hit.collider.tag == "Furniture")
+					{
+                        hit.transform.SetParent(playerTransform, true);
+                    }
 				}
                 return true;
             }

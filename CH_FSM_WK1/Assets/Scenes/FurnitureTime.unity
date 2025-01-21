@@ -501,13 +501,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _parentBlackboard: {fileID: 0}
-  _serializedBlackboard: '{"_variables":{"Furniture":{"_name":"Furniture","_id":"6190ab35-bdcc-43ea-84d6-c4ba5ea71a7e","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+  _serializedBlackboard: '{"_variables":{"Furniture":{"_value":1,"_name":"Furniture","_id":"6190ab35-bdcc-43ea-84d6-c4ba5ea71a7e","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
     UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}}}'
-  _objectReferences: []
+  _objectReferences:
+  - {fileID: 0}
+  - {fileID: 6131576423974973481, guid: d77b07a450e6ccf47adae09d8cb4442c, type: 3}
   _serializedVariables:
-  - _json: '{"_name":"Furniture","_id":"6190ab35-bdcc-43ea-84d6-c4ba5ea71a7e","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+  - _json: '{"_value":1,"_name":"Furniture","_id":"6190ab35-bdcc-43ea-84d6-c4ba5ea71a7e","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}'
-    _references: []
+    _references:
+    - {fileID: 0}
+    - {fileID: 6131576423974973481, guid: d77b07a450e6ccf47adae09d8cb4442c, type: 3}
 --- !u!114 &882296281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -521,9 +525,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _serializedExposedParameters: []
-  _boundGraphSerialization: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"executionMode":1,"actions":[]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_position":{"x":736.6673,"y":171.0594},"$type":"NodeCanvas.StateMachines.ActionState","$id":"0"},{"_actionList":{"executionMode":1,"actions":[{"parent":{"_name":""},"clonePosition":{"_value":{"x":2.5,"y":0.5}},"cloneRotation":{},"saveCloneAs":{"_name":"Furniture","_targetVariableID":"6190ab35-bdcc-43ea-84d6-c4ba5ea71a7e"},"overrideAgent":{"_type":"UnityEngine.Transform","_value":1},"$type":"NodeCanvas.Tasks.Actions.InstantiateGameObject"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Create
+  _boundGraphSerialization: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"executionMode":1,"actions":[]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Wait
+    for Input","_position":{"x":721.4111,"y":171.0594},"$type":"NodeCanvas.StateMachines.ActionState","$id":"0"},{"_actionList":{"executionMode":1,"actions":[{"parent":{"_name":""},"clonePosition":{"_value":{"x":2.5,"y":0.5}},"cloneRotation":{},"saveCloneAs":{"_name":"Furniture","_targetVariableID":"6190ab35-bdcc-43ea-84d6-c4ba5ea71a7e"},"overrideAgent":{"_type":"UnityEngine.Transform","_value":1},"$type":"NodeCanvas.Tasks.Actions.InstantiateGameObject"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Create
     Furniture","_position":{"x":335.0,"y":346.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"1"},{"_actionList":{"executionMode":1,"actions":[{"audioClip":{"_value":2},"overrideAgent":{"_type":"UnityEngine.Transform","_value":3},"$type":"NodeCanvas.Tasks.Actions.PlayAudioAtPosition"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Play
-    Sound","_position":{"x":810.0923,"y":530.8354},"$type":"NodeCanvas.StateMachines.ActionState","$id":"2"},{"_actionList":{"executionMode":1,"actions":[{"playerTransform":3,"$type":"NodeCanvas.Tasks.Actions.ObjectMoving"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_position":{"x":1106.089,"y":334.175},"$type":"NodeCanvas.StateMachines.ActionState","$id":"3"}],"connections":[{"_condition":{"$type":"NodeCanvas.Tasks.Conditions.CheckKeyboardInput"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"playerTransform":3,"$type":"NodeCanvas.Tasks.Conditions.ObjectSelected"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"3"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
+    Sound","_position":{"x":810.0923,"y":530.8354},"$type":"NodeCanvas.StateMachines.ActionState","$id":"2"},{"_actionList":{"executionMode":1,"actions":[{"playerTransform":3,"$type":"NodeCanvas.Tasks.Actions.ObjectMoving"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Move
+    Obejct","_position":{"x":1107.476,"y":334.175},"$type":"NodeCanvas.StateMachines.ActionState","$id":"3"}],"connections":[{"_condition":{"$type":"NodeCanvas.Tasks.Conditions.CheckKeyboardInput"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"playerTransform":3,"$type":"NodeCanvas.Tasks.Conditions.ObjectSelected"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"3"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
   _boundGraphObjectReferences:
   - {fileID: 0}
   - {fileID: 8320277936682483416, guid: d77b07a450e6ccf47adae09d8cb4442c, type: 3}
