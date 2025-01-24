@@ -8,6 +8,7 @@ namespace NodeCanvas.Tasks.Actions {
 		public Color scanColour;
 		public int numberOfScanCirclePoints;
 		public BBParameter<float> detectionRadius;
+		public BBParameter<Transform> targetTransform;
 		public LayerMask lightTowerLayerMask;
 
 		//Use for initialization. This is called only once in the lifetime of the task.
@@ -42,6 +43,8 @@ namespace NodeCanvas.Tasks.Actions {
 				float repairValue = LightTowerBlackboard.GetVariableValue<float>("repairValue");
 				if (repairValue == 0)
 				{
+					targetTransform.value = LightTowerBlackboard.GetVariableValue<Transform>("workpad");
+
 					EndAction(true);
 				}
 			}

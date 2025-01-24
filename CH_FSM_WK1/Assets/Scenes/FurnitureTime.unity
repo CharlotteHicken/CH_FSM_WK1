@@ -502,7 +502,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _parentBlackboard: {fileID: 0}
   _serializedBlackboard: '{"_variables":{"Furniture":{"_value":1,"_name":"Furniture","_id":"6190ab35-bdcc-43ea-84d6-c4ba5ea71a7e","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}}}'
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"MaxSpeed":{"_value":5.0,"_name":"MaxSpeed","_id":"2bbe1143-d360-44a7-a974-b4437d71ce44","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}}}'
   _objectReferences:
   - {fileID: 0}
   - {fileID: 6131576423974973481, guid: d77b07a450e6ccf47adae09d8cb4442c, type: 3}
@@ -512,6 +513,9 @@ MonoBehaviour:
     _references:
     - {fileID: 0}
     - {fileID: 6131576423974973481, guid: d77b07a450e6ccf47adae09d8cb4442c, type: 3}
+  - _json: '{"_value":5.0,"_name":"MaxSpeed","_id":"2bbe1143-d360-44a7-a974-b4437d71ce44","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
 --- !u!114 &882296281
 MonoBehaviour:
   m_ObjectHideFlags: 0
