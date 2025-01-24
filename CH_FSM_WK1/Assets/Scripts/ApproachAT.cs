@@ -2,25 +2,17 @@ using NodeCanvas.Framework;
 using ParadoxNotion.Design;
 using UnityEngine;
 
-
 namespace NodeCanvas.Tasks.Actions {
 
 	public class ApproachAT : ActionTask {
-
-		public Transform target;
-		public float speed;
-		public float arrivalDistance;
-		public float energyUseRate;
+		public BBParameter<Transform> target;
+		public BBParameter<float> speed;
+		public BBParameter<float> arrivalDistance;
 
 
-		Blackboard agentBlackboard;
-
-        //Use for initialization. This is called only once in the lifetime of the task.
-        //Return null if init was successfull. Return an error string otherwise
-        protected override string OnInit() {
-			agentBlackboard = agent.GetComponent<Blackboard>();
-			speed = agentBlackboard.GetVariableValue<float>("speed");
-			energyUseRate = agentBlackboard.GetVariableValue<float>("energyUse");
+		//Use for initialization. This is called only once in the lifetime of the task.
+		//Return null if init was successfull. Return an error string otherwise
+		protected override string OnInit() {
 			return null;
 		}
 
@@ -33,18 +25,11 @@ namespace NodeCanvas.Tasks.Actions {
 
 		//Called once per frame while the action is active.
 		protected override void OnUpdate() {
-			Vector3 moveDirection = (target.position - agent.transform.position).normalized;
-			agent.transform.position += moveDirection * speed * Time.deltaTime;
+			Vector3 moveDirection = (target.value.position - agent.transform.position).normalized;
+			agent.transform.position += moveDirection * speed.value * Time.deltaTime;
 
-			float distanceToTarget = Vector3.Distance(target.position, agent.transform.position);
-
-            float currentEnergy = agentBlackboard.GetVariableValue<float>("energy");
-
-            currentEnergy -= energyUseRate * Time.deltaTime;
-
-            agentBlackboard.SetVariableValue("energy", currentEnergy);
-
-            if (distanceToTarget < arrivalDistance)
+			float distanceToTarget = Vector3.Distance(target.value.position, agent.transform.position);
+			if (distanceToTarget < arrivalDistance.value)
 			{
 				EndAction(true);
 			}
