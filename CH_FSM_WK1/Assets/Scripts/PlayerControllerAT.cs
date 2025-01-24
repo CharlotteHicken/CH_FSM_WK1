@@ -21,6 +21,7 @@ namespace NodeCanvas.Tasks.Actions {
         protected override string OnInit() {
             acceleration = maxSpeed.value / accelerateTime;
             deceleration = maxSpeed.value / decelerateTime;
+            currentSpeed.value = maxSpeed.value;
             return null;
 		}
 
