@@ -503,6 +503,7 @@ MonoBehaviour:
   _serializedBlackboard: '{"_variables":{"Furniture":{"_value":1,"_name":"Furniture","_id":"6190ab35-bdcc-43ea-84d6-c4ba5ea71a7e","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
     UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"MaxSpeed":{"_value":5.0,"_name":"MaxSpeed","_id":"2bbe1143-d360-44a7-a974-b4437d71ce44","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"CurrentSpeed":{"_name":"CurrentSpeed","_id":"c2a1eebe-0f3a-4896-90cd-f53403f9764b","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"speedModifier":{"_name":"speedModifier","_id":"07707ead-2d5b-4dc3-a45b-6add13be8bc3","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}}}'
   _objectReferences:
   - {fileID: 0}
@@ -517,6 +518,9 @@ MonoBehaviour:
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
     _references: []
   - _json: '{"_name":"CurrentSpeed","_id":"c2a1eebe-0f3a-4896-90cd-f53403f9764b","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"speedModifier","_id":"07707ead-2d5b-4dc3-a45b-6add13be8bc3","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
     _references: []
 --- !u!114 &882296281
@@ -546,8 +550,8 @@ MonoBehaviour:
     _version: 3.31
     _category: 
     _comments: 
-    _translation: {x: 159.34953, y: 181.20442}
-    _zoomFactor: 0.42506102
+    _translation: {x: -149, y: 79}
+    _zoomFactor: 0.6482619
   _firstActivation: 0
   _enableAction: 0
   _disableAction: 0
